@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MoDI</title>
+    <link rel="stylesheet" href="../contact/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li class="dropdown artwork-item">
+                    <a href="#" class="dropbtn">Artwork</a>
+                    <div class="dropdown-content">
+                        <a href="../design/art1.html">Design</a>
+                        <a href="../drawing/art2.html">Drawing</a>
+                    </div>
+                </li>
+                <li><a href="../contact/contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+
+        <!-- SNS Buttons -->
+        <div class="sns-buttons">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../image/인스타로고.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../image/트위터로고.png" alt="Twitter">
+            </a>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="010-1234-5678 (-는 없이 작성해 주세요.)" pattern="\d{3}\d{4}\d{4}" required>
+            <!-- 전화번호 형식 검사 -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@xxx.com" required>
+            <!-- 이메일 기본 유효성 검사 -->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required>문의사항을 적어주세요.</textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MoDI. All rights reserved.</p>
+    </footer>
+
+    <script src="../contact/contact.js"></script>
+</body>
+</html>
